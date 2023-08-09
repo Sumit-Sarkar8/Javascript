@@ -29,7 +29,53 @@
 // "hitesh" => true
 
 // CONVERT NUMBER INTO STRING 
-let someNumber = 33;
-let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof(stringNumber));
+// let someNumber = 33;
+// let stringNumber = String(someNumber);
+// console.log(stringNumber);
+// console.log(typeof(stringNumber));
+
+ // *********************************************** OPERATIONS ***********************************************
+ 
+//  let value = 3;
+//  let negValue = -value;
+//  console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2/2);
+// console.log(2%2);
+
+// let str1 = "hello";
+// let str2 = " sumit";
+
+// let str3 = str1 + str2;
+// console.log(str3);
+
+// COMPLEX SITUATION 
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + "2");
+// console.log("1" + 2 + 2); // We think that this give output of 14 but it's  output is 122
+// console.log(1 + 2 + "2"); // output 32 
+
+
+// console.log(+true); // don't practice this type of code here it's only for knowledge purpose
+// console.log(true+); // this code will show error 
+// console.log(+ "");
+
+// THIS IS NOT PREFERABLE
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2;
+
+let gameCounter = 100;
+// gameCounter++;
+//   OR
+++gameCounter;
+console.log(gameCounter);
+
+
+
+
