@@ -24,5 +24,5 @@ let state;
 
 
 // console.log(typeof "sumit");
-// console.log(typeof null);
-console.log(typeof undefined);
+// console.log(typeof null); // output => object
+// console.log(typeof undefined); // output => undefined
