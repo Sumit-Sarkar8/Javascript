@@ -1,0 +1,6 @@
+{
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "screencastMode.keyboardOptions": {
+        "showCommandGroups": true
+    }
+}
