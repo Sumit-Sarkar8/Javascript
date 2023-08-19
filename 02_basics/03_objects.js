@@ -48,8 +48,8 @@ JsUser.greetingTwo = function() {
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());          // output => Hello JS user
+console.log(JsUser.greetingTwo());      // output => Hello JS user, Sumit undefined
 
 
 // console.log(JsUser.greeting); // output => [Function (anonymous)]
