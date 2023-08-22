@@ -16,7 +16,7 @@ const regularUser = {
   },
 };
 
-console.log(regularUser.fullname.username.firstname);
+// console.log(regularUser.fullname.username.firstname);
 
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "a", 4: "b" };
@@ -49,11 +49,26 @@ const users = [
 ];
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));  // output => [ 'id', 'name', 'isLoggedIn' ]   KEYS PRINT
-console.log(Object.values(tinderUser)); // output => [ '123abc', 'Penny', false ]    VALUES PRINT
-console.log(Object.entries(tinderUser)); // output => [ [ 'id', '123abc' ], [ 'name', 'Penny' ], [ 'isLoggedIn', false ] ]  ARRAY INSIDE ARRAY 
+// console.log(Object.keys(tinderUser));  // output => [ 'id', 'name', 'isLoggedIn' ]   KEYS PRINT
+// console.log(Object.values(tinderUser)); // output => [ '123abc', 'Penny', false ]    VALUES PRINT
+// console.log(Object.entries(tinderUser)); // output => [ [ 'id', '123abc' ], [ 'name', 'Penny' ], [ 'isLoggedIn', false ] ]  ARRAY INSIDE ARRAY 
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn")); // output => true;
-console.log(tinderUser.hasOwnProperty("isLogged")); // output => false;
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); // output => true;
+// console.log(tinderUser.hasOwnProperty("isLogged")); // output => false;
+ 
+
+const course = {
+  coursename: "Junoon Batch",
+  price: "999",
+  courseInstructor: "Alakh Pandey",
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course;
+// console.log(courseInstructor);
+
+console.log(instructor);
+
