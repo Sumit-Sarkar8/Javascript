@@ -68,15 +68,66 @@ function addTwoNumbers(number1, number2) {
 
 
 
-function loginUserMessage(username) {
-    if(!username) {     // output => Please entera a username; undefined same output as line no. 57
+// function loginUserMessage(username) {
+//     if(!username) {     // output => Please entera a username; undefined same output as line no. 57
 
-        console.log("Please entera a username");
-        return;
-    }
-    return `${username} just logged in`
+//         console.log("Please entera a username");
+//         return;
+//     }
+//     return `${username} just logged in`
+// }
+
+
+
+// console.log(loginUserMessage())  
+
+
+// ____________________________________________       PART-2      __________________________________________________________                   
+
+// function calculateCartPrice(num1) {
+//     return num1;
+// }
+
+// // console.log(calculateCartPrice(2)); // output => 2
+// console.log(calculateCartPrice(200, 400, 500));  // output => 200
+
+// function calculateCartPrice(...num1) {
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(200, 400, 500)); // output => [ 200, 400, 500 ]    returns an array
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1;
 }
 
+console.log(calculateCartPrice(200, 400, 500, 2000));
 
 
-console.log(loginUserMessage())  
+// Object as a function 
+const user = {
+  username: "Sumit",
+  price: 199,
+}
+
+function handleObject(anyObject) {
+console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+// handleObject(user)  // output => Username is sumit and price is 199
+
+
+
+// ANOTHER WAY TO DEFINE OBJECT AS A FUNCTION 
+handleObject({
+  username: "Peter",
+  price: 399,
+})
+
+const myNewArray = [200, 400, 100, 600];
+
+function returnSecondValue(getArray) {
+  return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray)); // output => 400
+console.log(returnSecondValue([200, 400, 500, 1000]));  // output => 400
